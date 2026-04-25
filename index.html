@@ -3,12 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joseph Comia | Portfolio</title>
+<title>Joseph Comia | IT Portfolio</title>
 
 <style>
-  html {
-    scroll-behavior: smooth;
-  }
+  html { scroll-behavior: smooth; }
 
   body {
     margin: 0;
@@ -18,86 +16,70 @@
   }
 
   header {
-    background: #111827;
-    padding: 60px 20px;
     text-align: center;
+    padding: 70px 20px;
+    background: #111827;
   }
 
   .avatar {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    margin-bottom: 15px;
     border: 3px solid #38bdf8;
+    margin-bottom: 15px;
   }
 
-  header h1 {
-    margin: 0;
-    font-size: 34px;
-  }
+  h1 { margin: 0; font-size: 36px; }
 
-  header p {
-    margin-top: 10px;
+  .highlight { color: #38bdf8; }
+
+  .subtitle {
     color: #94a3b8;
+    margin-top: 10px;
   }
 
-  .btn-group {
-    margin-top: 20px;
-  }
+  .btn-group { margin-top: 20px; }
 
   .btn {
-    display: inline-block;
     padding: 10px 18px;
     margin: 5px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    display: inline-block;
   }
 
-  .btn-primary {
-    background: #38bdf8;
-    color: #000;
-  }
+  .primary { background: #38bdf8; color: #000; }
+  .primary:hover { background: #0ea5e9; }
 
-  .btn-primary:hover {
-    background: #0ea5e9;
-  }
-
-  .btn-outline {
+  .outline {
     border: 1px solid #38bdf8;
     color: #38bdf8;
   }
-
-  .btn-outline:hover {
-    background: #38bdf8;
-    color: #000;
-  }
+  .outline:hover { background: #38bdf8; color: #000; }
 
   nav {
-    text-align: center;
     background: #1f2937;
-    padding: 10px;
+    text-align: center;
+    padding: 12px;
   }
 
   nav a {
     color: #e2e8f0;
-    margin: 0 15px;
+    margin: 0 12px;
     text-decoration: none;
     font-weight: bold;
   }
 
-  nav a:hover {
-    color: #38bdf8;
-  }
+  nav a:hover { color: #38bdf8; }
 
   section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 60px 20px;
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.6s ease;
+    transition: 0.6s ease;
   }
 
   section.show {
@@ -108,41 +90,42 @@
   h2 {
     border-left: 4px solid #38bdf8;
     padding-left: 10px;
+    margin-bottom: 15px;
   }
 
   .card {
     background: #1e293b;
     padding: 20px;
-    margin-top: 15px;
     border-radius: 10px;
+    margin-top: 15px;
   }
 
-  .skills span {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+  }
+
+  .tag {
     display: inline-block;
     background: #334155;
-    padding: 8px 12px;
-    margin: 5px;
-    border-radius: 20px;
-    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin: 3px;
   }
 
   .project-img {
     width: 100%;
     border-radius: 10px;
     margin-top: 10px;
-    border: 1px solid #334155;
   }
 
   footer {
     text-align: center;
     padding: 20px;
     background: #111827;
-    margin-top: 40px;
     color: #94a3b8;
-  }
-
-  .highlight {
-    color: #38bdf8;
   }
 </style>
 </head>
@@ -150,99 +133,144 @@
 <body>
 
 <header>
-  <!-- Avatar -->
-  <img class="avatar" src="https://i.imgur.com/8Km9tLL.png" alt="Profile">
+  <img class="avatar" src="https://i.imgur.com/8Km9tLL.png">
 
-  <h1>Hello, I'm <span class="highlight">Joseph Comia</span></h1>
-  <p>BSIT Student | Web Developer | System Developer</p>
+  <h1>Joseph <span class="highlight">Comia</span></h1>
+  <p class="subtitle">BSIT Graduate Candidate | Web Developer | IT Support | System Developer</p>
 
   <div class="btn-group">
-    <a href="#contact" class="btn btn-primary">Hire Me</a>
-    <a href="resume.pdf" download class="btn btn-outline">Download Resume</a>
+    <a href="#contact" class="btn primary">Hire Me</a>
+    <a href="resume.pdf" class="btn outline" download>Download CV</a>
   </div>
 </header>
 
 <nav>
   <a href="#about">About</a>
+  <a href="#objective">Objective</a>
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
   <a href="#contact">Contact</a>
 </nav>
 
+<!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
   <div class="card">
     <p>
-      I am a 3rd-year BSIT student passionate about building web systems and IoT projects.
-      I specialize in PHP, MySQL, JavaScript, and Arduino/ESP32 systems.
-      I enjoy solving real-world problems through technology and building functional systems.
+      I am a graduating BSIT student with experience in web development, system design, IT support,
+      and IoT-based projects. I specialize in building functional systems using modern web technologies
+      and real-world problem solving.
     </p>
   </div>
 </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="card skills">
-    <span>PHP Laravel</span>
-    <span>MySQL</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Firebase</span>
-    <span>ESP32 / Arduino</span>
-    <span>System Development</span>
+<!-- OBJECTIVE -->
+<section id="objective">
+  <h2>Career Objective</h2>
+  <div class="card">
+    <p>
+      Seeking an entry-level IT position where I can apply my skills in web development, technical support,
+      and system management. I aim to contribute to a professional organization while continuing to grow
+      in software development and IT operations.
+    </p>
   </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="card">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">PHP Laravel</span>
+    <span class="tag">MySQL</span>
+    <span class="tag">Java</span>
+    <span class="tag">Firebase</span>
+    <span class="tag">Cloudflare</span>
+    <span class="tag">Hostinger</span>
+    <span class="tag">IT Support</span>
+    <span class="tag">Networking Basics</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="card">
-    <h3>JobConnect Sto. Tomas System</h3>
-    <p>
-      A web-based job application and tracking system for PESO Sto. Tomas.
-    </p>
-    <img class="project-img" src="https://via.placeholder.com/800x400?text=JobConnect+UI+Screenshot" alt="JobConnect">
-  </div>
+  <div class="grid">
 
-  <div class="card">
-    <h3>Smart Waste Segregation System</h3>
-    <p>
-      IoT-based waste sorting system using ESP32-CAM and Arduino Uno.
-    </p>
-    <img class="project-img" src="https://via.placeholder.com/800x400?text=IoT+Waste+System" alt="IoT Project">
+    <div class="card">
+      <h3>JobConnect Sto. Tomas</h3>
+      <p>Capstone system for PESO job matching and tracking platform.</p>
+      <img class="project-img" src="https://via.placeholder.com/800x400?text=JobConnect+System">
+      <p>
+        Built using PHP Laravel, MySQL, Firebase, and deployed via Hostinger with Cloudflare security.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Smart Waste Segregation System</h3>
+      <p>IoT system using ESP32-CAM and Arduino Uno for automated waste sorting.</p>
+      <img class="project-img" src="https://via.placeholder.com/800x400?text=IoT+Waste+System">
+    </div>
+
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience & Leadership</h2>
 
   <div class="card">
-    <p><strong>Email:</strong> joseph.comia2506@email.com</p>
-    <p><strong>Phone:</strong> 0919-846-0893</p>
-    <p><strong>Location:</strong> Philippines</p>
+    <h3>On-the-Job Training (OJT)</h3>
+    <p>City Government of Sto. Tomas (2026)</p>
+    <p>Assisted in IT support, troubleshooting, and system monitoring.</p>
+  </div>
+
+  <div class="card">
+    <h3>Leadership Roles</h3>
+    <p>President – STI HIMS Scholars (2024–Present)</p>
+    <p>Chairman – Supreme Student Council (2023–Present)</p>
+    <p>Secretary – Supreme Student Council (2022–2023)</p>
+  </div>
+
+  <div class="card">
+    <h3>Certifications & Trainings</h3>
+    <p>✔ Java Fundamentals (2023)</p>
+    <p>✔ System Administration (2023)</p>
+    <p>✔ eGovPH Orientation (2024)</p>
+    <p>✔ Leadership Training (2024)</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p><b>Email:</b> joseph.comia2506@gmail.com</p>
+    <p><b>Phone:</b> 0919-846-0893</p>
+    <p><b>Location:</b> Philippines</p>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Joseph Comia | Built with GitHub Pages</p>
+  © 2026 Joseph Comia | Professional IT Portfolio
 </footer>
 
 <script>
-  // Scroll animation
-  const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  }, { threshold: 0.1 });
-
-  sections.forEach(section => {
-    observer.observe(section);
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
   });
+}, { threshold: 0.1 });
+
+sections.forEach(sec => observer.observe(sec));
 </script>
 
 </body>
