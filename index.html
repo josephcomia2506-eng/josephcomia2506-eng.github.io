@@ -1,97 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joseph Comia | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joseph Comia | Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-    }
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
 
-    header {
-      background: #111827;
-      padding: 40px 20px;
-      text-align: center;
-    }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+  }
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
+  header {
+    background: #111827;
+    padding: 60px 20px;
+    text-align: center;
+  }
 
-    header p {
-      margin-top: 10px;
-      color: #94a3b8;
-    }
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #38bdf8;
+  }
 
-    nav {
-      text-align: center;
-      background: #1f2937;
-      padding: 10px;
-    }
+  header h1 {
+    margin: 0;
+    font-size: 34px;
+  }
 
-    nav a {
-      color: #e2e8f0;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+  header p {
+    margin-top: 10px;
+    color: #94a3b8;
+  }
 
-    nav a:hover {
-      color: #38bdf8;
-    }
+  .btn-group {
+    margin-top: 20px;
+  }
 
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+  .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
 
-    h2 {
-      border-left: 4px solid #38bdf8;
-      padding-left: 10px;
-    }
+  .btn-primary {
+    background: #38bdf8;
+    color: #000;
+  }
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin-top: 15px;
-      border-radius: 10px;
-    }
+  .btn-primary:hover {
+    background: #0ea5e9;
+  }
 
-    .skills span {
-      display: inline-block;
-      background: #334155;
-      padding: 8px 12px;
-      margin: 5px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
+  .btn-outline {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+  }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111827;
-      margin-top: 40px;
-      color: #94a3b8;
-    }
+  .btn-outline:hover {
+    background: #38bdf8;
+    color: #000;
+  }
 
-    .highlight {
-      color: #38bdf8;
-    }
-  </style>
+  nav {
+    text-align: center;
+    background: #1f2937;
+    padding: 10px;
+  }
+
+  nav a {
+    color: #e2e8f0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #38bdf8;
+  }
+
+  section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  }
+
+  section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h2 {
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+  }
+
+  .card {
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+  .skills span {
+    display: inline-block;
+    background: #334155;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  .project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #334155;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    margin-top: 40px;
+    color: #94a3b8;
+  }
+
+  .highlight {
+    color: #38bdf8;
+  }
+</style>
 </head>
 
 <body>
 
 <header>
+  <!-- Avatar -->
+  <img class="avatar" src="https://i.imgur.com/8Km9tLL.png" alt="Profile">
+
   <h1>Hello, I'm <span class="highlight">Joseph Comia</span></h1>
   <p>BSIT Student | Web Developer | System Developer</p>
+
+  <div class="btn-group">
+    <a href="#contact" class="btn btn-primary">Hire Me</a>
+    <a href="resume.pdf" download class="btn btn-outline">Download Resume</a>
+  </div>
 </header>
 
 <nav>
@@ -106,8 +174,8 @@
   <div class="card">
     <p>
       I am a 3rd-year BSIT student passionate about building web systems and IoT projects.
-      I specialize in developing functional systems using PHP, MySQL, JavaScript, and Arduino/ESP32 technologies.
-      I enjoy solving real-world problems through technology.
+      I specialize in PHP, MySQL, JavaScript, and Arduino/ESP32 systems.
+      I enjoy solving real-world problems through technology and building functional systems.
     </p>
   </div>
 </section>
@@ -133,17 +201,16 @@
     <h3>JobConnect Sto. Tomas System</h3>
     <p>
       A web-based job application and tracking system for PESO Sto. Tomas.
-      It allows applicants to apply for jobs, employers to manage postings,
-      and admins to track applications efficiently.
     </p>
+    <img class="project-img" src="https://via.placeholder.com/800x400?text=JobConnect+UI+Screenshot" alt="JobConnect">
   </div>
 
   <div class="card">
     <h3>Smart Waste Segregation System</h3>
     <p>
-      An IoT-based system using ESP32-CAM and Arduino Uno to detect and
-      automatically sort waste into designated bins using servo motors.
+      IoT-based waste sorting system using ESP32-CAM and Arduino Uno.
     </p>
+    <img class="project-img" src="https://via.placeholder.com/800x400?text=IoT+Waste+System" alt="IoT Project">
   </div>
 </section>
 
@@ -160,6 +227,23 @@
 <footer>
   <p>© 2026 Joseph Comia | Built with GitHub Pages</p>
 </footer>
+
+<script>
+  // Scroll animation
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
 
 </body>
 </html>
