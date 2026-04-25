@@ -1,20 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Joseph Comia Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Comia | Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    header {
+      background: #111827;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #94a3b8;
+    }
+
+    nav {
+      text-align: center;
+      background: #1f2937;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #334155;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      margin-top: 40px;
+      color: #94a3b8;
+    }
+
+    .highlight {
+      color: #38bdf8;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello, I'm Joseph Comia</h1>
+
+<header>
+  <h1>Hello, I'm <span class="highlight">Joseph Comia</span></h1>
   <p>BSIT Student | Web Developer | System Developer</p>
+</header>
 
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a 3rd-year BSIT student passionate about building web systems and IoT projects.
+      I specialize in developing functional systems using PHP, MySQL, JavaScript, and Arduino/ESP32 technologies.
+      I enjoy solving real-world problems through technology.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>PHP Laravel</span>
+    <span>MySQL</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Firebase</span>
+    <span>ESP32 / Arduino</span>
+    <span>System Development</span>
+  </div>
+</section>
+
+<section id="projects">
   <h2>Projects</h2>
-  <ul>
-    <li>JobConnect Sto. Tomas System</li>
-    <li>ESP32 Smart Waste Segregation System</li>
-  </ul>
 
+  <div class="card">
+    <h3>JobConnect Sto. Tomas System</h3>
+    <p>
+      A web-based job application and tracking system for PESO Sto. Tomas.
+      It allows applicants to apply for jobs, employers to manage postings,
+      and admins to track applications efficiently.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Smart Waste Segregation System</h3>
+    <p>
+      An IoT-based system using ESP32-CAM and Arduino Uno to detect and
+      automatically sort waste into designated bins using servo motors.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
   <h2>Contact</h2>
-  <p>Email: joseph.comia2506@email.com</p>
-  <p>Phone: 09198460893</p>
+
+  <div class="card">
+    <p><strong>Email:</strong> joseph.comia2506@email.com</p>
+    <p><strong>Phone:</strong> 0919-846-0893</p>
+    <p><strong>Location:</strong> Philippines</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Joseph Comia | Built with GitHub Pages</p>
+</footer>
+
 </body>
 </html>
