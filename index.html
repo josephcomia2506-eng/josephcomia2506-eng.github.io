@@ -42,7 +42,7 @@ h1 { margin: 10px 0; font-size: 38px; }
   display: inline-block;
   background: #22c55e;
   color: #000;
-  padding: 5px 10px;
+  padding: 5px 12px;
   border-radius: 20px;
   font-size: 12px;
   margin-top: 10px;
@@ -54,6 +54,7 @@ h1 { margin: 10px 0; font-size: 38px; }
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
 }
 
 .primary { background: #38bdf8; color: #000; }
@@ -92,6 +93,7 @@ section {
   opacity: 0;
   transform: translateY(30px);
   transition: 0.6s ease;
+  border-bottom: 1px solid #1e293b;
 }
 
 section.show {
@@ -115,6 +117,7 @@ h2 {
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(56,189,248,0.2);
 }
 
 /* GRID */
@@ -167,13 +170,23 @@ footer {
   <img class="avatar" src="Comia, Joseph.png">
 
   <h1>Joseph <span class="highlight">Comia</span></h1>
-  <p class="subtitle">BSIT Graduate Candidate | Web Developer | IT Support</p>
 
-  <div class="badge">Available for Hire</div>
+  <p class="subtitle">
+    I build web-based systems and IT solutions that improve real-world workflows.
+  </p>
+
+  <div class="badge">Open to Work • 2026 Graduate</div>
 
   <div>
     <a href="#contact" class="btn primary">Hire Me</a>
     <a href="resume.pdf" class="btn outline" download>Download CV</a>
+  </div>
+
+  <!-- SOCIAL LINKS -->
+  <div style="margin-top:15px;">
+    <a href="https://www.linkedin.com/in/joseph-comia-4043683a5/" target="_blank" class="btn outline">LinkedIn</a>
+    <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage" target="_blank" class="btn outline">Indeed</a>
+    <a href="mailto:joseph.comia2506@gmail.com" class="btn outline">Email Me</a>
   </div>
 
   <!-- STATS -->
@@ -183,7 +196,7 @@ footer {
       <p>Projects</p>
     </div>
     <div class="stat">
-      <h3>5+</h3>
+      <h3>8+</h3>
       <p>Technologies</p>
     </div>
     <div class="stat">
@@ -222,6 +235,7 @@ footer {
     <span class="tag">MySQL</span>
     <span class="tag">Firebase</span>
     <span class="tag">Cloudflare</span>
+    <span class="tag">Hostinger</span>
     <span class="tag">IT Support</span>
   </div>
 </section>
@@ -232,13 +246,33 @@ footer {
   <div class="grid">
     <div class="card">
       <h3>JobConnect Sto. Tomas</h3>
-      <p><b>Capstone Project</b></p>
+      <p><b>Capstone Project | Full Stack System</b></p>
+
+      <img class="project-img" src="Screenshot 2025-11-22 052031.png">
+
+      <p>
+        A web-based job application and tracking system developed for PESO
+        to streamline employment services and applicant management.
+      </p>
+
       <ul>
-        <li>Job posting & application system</li>
-        <li>Applicant tracking dashboard</li>
-        <li>Resume upload feature</li>
-        <li>Firebase integration</li>
+        <li>✔ Job posting & application system</li>
+        <li>✔ Applicant tracking dashboard</li>
+        <li>✔ Resume upload feature</li>
+        <li>✔ Firebase integration</li>
+        <li>✔ Hosted via Hostinger + Cloudflare</li>
       </ul>
+
+      <div>
+        <span class="tag">Laravel</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Firebase</span>
+      </div>
+
+      <div style="margin-top:10px;">
+        <a href="#" class="btn primary">Live Demo</a>
+        <a href="#" class="btn outline">Source Code</a>
+      </div>
     </div>
   </div>
 </section>
@@ -260,8 +294,10 @@ footer {
 <section id="contact">
   <h2>Contact</h2>
   <div class="card">
-    <p>Email: joseph.comia2506@gmail.com</p>
-    <p>Phone: 0919-846-0893</p>
+    <p><b>Email:</b> joseph.comia2506@gmail.com</p>
+    <p><b>Phone:</b> 0919-846-0893</p>
+
+    <a href="mailto:joseph.comia2506@gmail.com" class="btn primary">Send Email</a>
   </div>
 </section>
 
