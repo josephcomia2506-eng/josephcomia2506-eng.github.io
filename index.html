@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joseph Comia | IT Portfolio</title>
+<title>Joseph Comia | Software Developer Portfolio</title>
 
 <style>
 html { scroll-behavior: smooth; }
@@ -37,13 +37,15 @@ h1 { margin: 10px 0; font-size: 38px; }
 
 .subtitle {
   color: #94a3b8;
+  max-width: 700px;
+  margin: auto;
 }
 
 .badge {
   display: inline-block;
   background: #22c55e;
   color: #000;
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
   font-size: 12px;
   margin-top: 10px;
@@ -128,21 +130,6 @@ h2 {
   gap: 15px;
 }
 
-/* PROJECT IMAGE (FIXED SIZE) */
-.project-img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-top: 10px;
-  border: 1px solid #334155;
-  transition: 0.3s;
-}
-
-.project-img:hover {
-  transform: scale(1.03);
-}
-
 /* TAGS */
 .tag {
   display: inline-block;
@@ -153,21 +140,14 @@ h2 {
   margin: 3px;
 }
 
-/* STATS */
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.stat {
-  text-align: center;
-}
-
-.stat h3 {
-  margin: 0;
-  color: #38bdf8;
+/* PROJECT IMAGE */
+.project-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid #334155;
 }
 
 /* FOOTER */
@@ -188,37 +168,19 @@ footer {
   <h1>Joseph <span class="highlight">Comia</span></h1>
 
   <p class="subtitle">
-    I build web-based systems and IT solutions that improve real-world workflows.
+    Full-Stack Web Developer focused on building production-ready systems, database-driven applications, and workflow automation solutions.
   </p>
 
-  <div class="badge">Open to Work • 2026 Graduate</div>
+  <div class="badge">Software Developer • Full-Stack • System Builder</div>
 
   <div>
     <a href="#contact" class="btn primary">Hire Me</a>
     <a href="resume.pdf" class="btn outline" download>Download CV</a>
   </div>
 
-  <!-- SOCIAL LINKS -->
   <div style="margin-top:15px;">
     <a href="https://www.linkedin.com/in/joseph-comia-4043683a5/" target="_blank" class="btn outline">LinkedIn</a>
-    <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage" target="_blank" class="btn outline">Indeed</a>
     <a href="mailto:joseph.comia2506@gmail.com" class="btn outline">Email Me</a>
-  </div>
-
-  <!-- STATS -->
-  <div class="stats">
-    <div class="stat">
-      <h3>2+</h3>
-      <p>Projects</p>
-    </div>
-    <div class="stat">
-      <h3>8+</h3>
-      <p>Technologies</p>
-    </div>
-    <div class="stat">
-      <h3>1</h3>
-      <p>Capstone System</p>
-    </div>
   </div>
 </header>
 
@@ -226,73 +188,93 @@ footer {
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
+  <a href="#architecture">System Approach</a>
   <a href="#experience">Experience</a>
   <a href="#contact">Contact</a>
 </nav>
 
+<!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
   <div class="card">
     <p>
-      I am a graduating BSIT student with hands-on experience in web development,
-      IT support, and system implementation. I focus on building real-world systems
-      that improve workflows and solve practical problems.
+      I am a Full-Stack Developer focused on building scalable, database-driven systems that solve real operational problems. I specialize in backend development, workflow automation, and end-to-end web application development.
     </p>
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
   <h2>Technical Skills</h2>
   <div class="card">
+    <p><b>Frontend</b></p>
     <span class="tag">HTML</span>
     <span class="tag">CSS</span>
     <span class="tag">JavaScript</span>
+
+    <p><b>Backend</b></p>
     <span class="tag">PHP Laravel</span>
     <span class="tag">MySQL</span>
+
+    <p><b>Tools</b></p>
     <span class="tag">Firebase</span>
-    <span class="tag">Cloudflare</span>
     <span class="tag">Hostinger</span>
-    <span class="tag">IT Support</span>
+    <span class="tag">Cloudflare</span>
+    <span class="tag">Git</span>
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
 
   <div class="grid">
     <div class="card">
+
       <h3>JobConnect Sto. Tomas</h3>
-      <p><b>Capstone Project | Full Stack System</b></p>
+      <p><b>Full-Stack Workforce Management System</b></p>
 
       <img class="project-img" src="Screenshot 2025-11-22 052031.png">
 
       <p>
-        A web-based job application and tracking system developed for PESO
-        to streamline employment services and applicant management.
+        JobConnect is a role-based job application system designed to digitize and streamline employment services for local government use.
       </p>
 
+      <p><b>Key Features:</b></p>
       <ul>
-        <li>✔ Job posting & application system</li>
-        <li>✔ Applicant tracking dashboard</li>
-        <li>✔ Resume upload feature</li>
-        <li>✔ Firebase integration</li>
-        <li>✔ Hosted via Hostinger + Cloudflare</li>
+        <li>Multi-role system (Admin / Employer / Applicant)</li>
+        <li>Job posting and application workflow</li>
+        <li>Applicant tracking system</li>
+        <li>Resume upload functionality</li>
       </ul>
 
+      <p><b>Tech Stack:</b></p>
+      <span class="tag">Laravel</span>
+      <span class="tag">PHP</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">JavaScript</span>
+
+      <p><b>Project Links:</b></p>
       <div>
-        <span class="tag">Laravel</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">Firebase</span>
+        <a href="https://youtube.com/your-demo" target="_blank" class="btn primary">🎥 Demo Video</a>
+        <a href="https://github.com/yourusername/jobconnect" target="_blank" class="btn outline">💻 Source Code</a>
       </div>
 
-      <div style="margin-top:10px;">
-        <a href="#" class="btn primary">Live Demo</a>
-        <a href="#" class="btn outline">Source Code</a>
-      </div>
     </div>
   </div>
 </section>
 
+<!-- SYSTEM APPROACH -->
+<section id="architecture">
+  <h2>System Approach</h2>
+  <div class="card">
+    <p>
+      I design systems using modular architecture, role-based access control, and normalized database structures to ensure scalability, maintainability, and real-world usability.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
 <section id="experience">
   <h2>Experience</h2>
 
@@ -300,13 +282,14 @@ footer {
     <h3>On-the-Job Training</h3>
     <p>City Government of Sto. Tomas (2026)</p>
     <ul>
-      <li>Provided IT support and troubleshooting</li>
-      <li>Assisted in system monitoring</li>
-      <li>Handled technical concerns of staff</li>
+      <li>IT support and troubleshooting</li>
+      <li>System monitoring and assistance</li>
+      <li>Technical support for staff operations</li>
     </ul>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
   <div class="card">
@@ -318,7 +301,7 @@ footer {
 </section>
 
 <footer>
-  © 2026 Joseph Comia | Professional Portfolio
+  © 2026 Joseph Comia | Software Developer Portfolio
 </footer>
 
 <script>
